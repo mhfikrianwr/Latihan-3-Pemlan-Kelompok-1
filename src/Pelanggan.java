@@ -24,9 +24,9 @@ public class Pelanggan {
     System.out.println("Tanggal Belanja : " + this.tanggal_belanja);
     System.out.print("Member : ");
     if (member) {
-      System.out.println("Iya");
+      System.out.println("Pelanggan merupakan member !");
       System.out.println("Id Member : " + this.id_member);
-    } else System.out.println("Tidak");
+    } else System.out.println("Pelanggan bukan merupakan member");
     System.out.println("===============");
   }
   public void lihatBelanjaan(){
