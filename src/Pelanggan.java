@@ -29,5 +29,7 @@ public class Pelanggan {
     } else System.out.println("Tidak");
     System.out.println("===============");
   }
+  public void lihatBelanjaan(){
+  }
 
 }
