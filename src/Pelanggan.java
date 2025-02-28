@@ -11,25 +11,23 @@ public class Pelanggan {
   public void setTanggalBelanja (String a) {
     this.tanggal_belanja=a;
   }
-  public void setMember (int b) {
-    if (b==1) this.member=true;
+  public void setMember (boolean b) {
+    if (b) this.member=true;
     else this.member=false;
   }
   public void setIdMember (String b) {
     if (this.member) this.id_member=b;
+    else System.out.println("ERROR : Pelanggan tidak terdaftar sebagi Member");
   }
 
   public void tampilkanInfo () {
+    System.out.println("=======Informasi Pelanggan=======");
     System.out.println("Nama Pelanggan : " + this.nama_pelanggan);
     System.out.println("Tanggal Belanja : " + this.tanggal_belanja);
     System.out.print("Member : ");
     if (member) {
-      System.out.println("Pelanggan merupakan member !");
       System.out.println("Id Member : " + this.id_member);
-    } else System.out.println("Pelanggan bukan merupakan member");
-    System.out.println("===============");
+    }
+    System.out.println("=================================");
   }
-  public void lihatBelanjaan(){
-  }
-
 }
